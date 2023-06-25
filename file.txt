@@ -1,0 +1,27 @@
+C:/Users/Rudra/Desktop/aa/flights.csv
+
+ load data local infile 'D:/flights1.csv'
+    into table flights
+    fields terminated by ','
+    enclosed by '"'
+    lines terminated by '\n'
+    ignore 1 rows;
+
+
+mysql -u root -p --local_infile
+(enter the password)
+use fda
+show tables;
+select * from flights;
+
+set global local_infile=1; (error : loading local data is disabled; this must be enabled on both client and server sides) 
+
+
+C:/Users/USER/Desktop/Aviation Project/flights.csv
+
+C:/Users/USER/flights.csv
+
+D:/flights.csv
+
+"D:\flights1.csv"
+
